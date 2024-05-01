@@ -16,34 +16,22 @@ const Nav = () => (
       <li>
         <A href="/users">/users</A>
       </li>
-      <li>
-        <A href="/users/">/users/</A>
-      </li>
 
       <li>
         <A href="/users/3">/users/3</A>
-      </li>
-      <li>
-        <A href="/users/3/">/users/3/</A>
       </li>
 
       <li>
         <A href="/users/foo/bar">/users/foo/bar</A>
       </li>
-      <li>
-        <A href="/users/foo/bar/">/users/foo/bar/</A>
-      </li>
 
       <li>
         <A href="/users/projects">/users/projects</A>
       </li>
-      <li>
-        <A href="/users/projects/">/users/projects/</A>
-      </li>
 
       {/* *404 NotFound */}
       <li>
-        <A href="/foo">Foo</A>
+        <A href="/not-found">Not Found</A>
       </li>
     </ul>
   </nav>
