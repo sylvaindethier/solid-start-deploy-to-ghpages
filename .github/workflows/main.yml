@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install
+        run: npm i --legacy-peer-deps
+
+      - name: Build
+        run: npm run build
+        env:
+          BASE_PATH: /solid-start-deploy-to-ghpages/
+
+      - name: Create .nojekyll
+        run: touch .output/public/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.6.0
+        with:
+          branch: gh-pages
+          folder: .output/public
