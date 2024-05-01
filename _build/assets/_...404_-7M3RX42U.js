@@ -1,0 +1,1 @@
+import{q as r,v as o,t as h}from"./web-D5QrHPOw.js";var s=h("<main><h1>There's nothing here</h1><p>The requested page <code></code> was not found.");function m(e){return(()=>{var t=r(s),n=t.firstChild,a=n.nextSibling,i=a.firstChild,l=i.nextSibling;return o(l,()=>e.location.pathname+e.location.search),t})()}export{m as default};
