@@ -1,1 +1,0 @@
-import{r as l,w as o,t as h}from"./web-BccSy_-o.js";var s=h("<main><h1>There's nothing here</h1><p>The requested page <code></code> was not found.");function m(e){return(()=>{var t=l(s),n=t.firstChild,a=n.nextSibling,r=a.firstChild,i=r.nextSibling;return o(i,()=>e.location.pathname+e.location.search),t})()}export{m as default};
