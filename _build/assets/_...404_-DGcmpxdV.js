@@ -1,1 +1,0 @@
-import{l as r,p as o,D as h}from"./web-CxAxm_OC.js";var s=h("<main><h1>There's nothing here</h1><p>The requested page <code></code> was not found.");function m(e){return(()=>{var t=r(s),n=t.firstChild,a=n.nextSibling,l=a.firstChild,i=l.nextSibling;return o(i,()=>e.location.pathname+e.location.search),t})()}export{m as default};
